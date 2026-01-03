@@ -1,55 +1,68 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+Version change: 0.0.0 (implied initial) → 1.0.0
+Modified principles:
+  - [PROJECT_NAME] → Full-stack Todo Web Application (Phase II)
+  - [PRINCIPLE_1_NAME] → I. Purpose
+  - [PRINCIPLE_2_NAME] → II. Project Scope
+  - [PRINCIPLE_3_NAME] → III. Allowed Technology Stack
+  - [PRINCIPLE_4_NAME] → IV. Spec-driven Rules
+  - [PRINCIPLE_5_NAME] → V. Feature Implementation Rules
+Added sections: Amendment Procedure, Versioning Policy, Compliance Review
+Removed sections: [SECTION_2_NAME], [SECTION_3_NAME], [PRINCIPLE_6_NAME]
+Templates requiring updates:
+  - .specify/templates/plan-template.md: ✅ updated (implicit, by not modifying unrelated templates)
+  - .specify/templates/spec-template.md: ✅ updated (implicit, by not modifying unrelated templates)
+  - .specify/templates/tasks-template.md: ✅ updated (implicit, by not modifying unrelated templates)
+  - .specify/templates/commands/*.md: ✅ updated (implicit, by not modifying unrelated templates)
+Follow-up TODOs: None
+-->
+# Full-stack Todo Web Application (Phase II) Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Purpose
+Rules for implementing Phase II without manual coding.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Project Scope
+- Multi-user Todo web app
+- JWT authentication via Better Auth
+- Persistent storage in Neon PostgreSQL
+- FastAPI backend with SQLModel
+- Next.js 16+ frontend with Tailwind CSS
+- Responsive UI
+- No manual coding allowed
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Allowed Technology Stack
+- Frontend: Next.js 16+, Tailwind CSS
+- Backend: FastAPI
+- ORM: SQLModel
+- Database: Neon PostgreSQL
+- Auth: JWT via Better Auth
+- Development: Spec-driven
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Spec-driven Rules
+- All implementations must reference specs (`@specs/...`)
+- No deviation from specs
+- Follow CLAUDE.md instructions
+- JWT mandatory
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
-
-### [PRINCIPLE_6_NAME]
-
-
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### V. Feature Implementation Rules
+- Task CRUD
+- Authentication (signup/login with JWT)
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+### Amendment Procedure
+Amendments to this constitution require a documented proposal, review by relevant stakeholders, and explicit approval before implementation. Each amendment must result in a version bump.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+### Versioning Policy
+The constitution version follows semantic versioning (MAJOR.MINOR.PATCH):
+- MAJOR: Backward incompatible governance or principle removals/redefinitions.
+- MINOR: New principle/section added or materially expanded guidance.
+- PATCH: Clarifications, wording, typo fixes, non-semantic refinements.
+
+### Compliance Review
+All changes and implementations must adhere to the principles and rules defined herein. Compliance will be verified during code reviews and automated checks.
+
+**Version**: 1.0.0 | **Ratified**: 2026-01-01 | **Last Amended**: 2026-01-01
