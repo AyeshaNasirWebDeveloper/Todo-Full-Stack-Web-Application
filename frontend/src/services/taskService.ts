@@ -1,4 +1,4 @@
-import { getToken } from "@/utils/token";
+import { getToken } from "../../src/utils/token";
 
 const API_BASE_URL = 'http://localhost:8000'; // Replace with your backend URL
 

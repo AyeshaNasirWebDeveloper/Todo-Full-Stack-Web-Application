@@ -1,6 +1,7 @@
-import AuthForm from '@/components/AuthForm';
+"use client"
+import AuthForm from '../../src/components/AuthForm';
 import { useRouter } from 'next/navigation';
-import { signup } from '@/services/authService';
+import { signup } from '../../src/services/authService';
 
 const SignupPage = () => {
   const router = useRouter(); // Placeholder for navigation

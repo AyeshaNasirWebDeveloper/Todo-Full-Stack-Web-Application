@@ -1,13 +1,13 @@
 from fastapi import FastAPI
-from backend.src.database import create_db_and_tables
+from src.database import create_db_and_tables
 from dotenv import load_dotenv
 import os
 
 # Load environment variables from .env file
 load_dotenv()
 
-from backend.src.api.v1.auth import router as auth_router
-from backend.src.api.v1.tasks import tasks_router
+from src.api.v1.auth import router as auth_router
+from src.api.v1.tasks import tasks_router
 
 app = FastAPI()
 app.include_router(auth_router)

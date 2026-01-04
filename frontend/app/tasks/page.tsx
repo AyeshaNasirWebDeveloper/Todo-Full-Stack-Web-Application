@@ -1,10 +1,11 @@
+"use client"
 
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import TaskList from '@/components/TaskList';
-import { getToken, removeToken } from '@/utils/token';
-import { TaskPublic } from '@/services/taskService';
-import { getTasks, createTask, updateTask, deleteTask } from '@/services/taskService'; // Assuming you'll create this service
+import TaskList from '../../src/components/TaskList';
+import { getToken, removeToken } from '../../src/utils/token';
+import { TaskPublic } from '../../src/services/taskService';
+import { getTasks, createTask, updateTask, deleteTask } from '../../src/services/taskService'; // Assuming you'll create this service
 
 const TasksPage: React.FC = () => {
   const router = useRouter();
