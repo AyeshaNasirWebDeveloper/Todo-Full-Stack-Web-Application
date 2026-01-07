@@ -8,7 +8,7 @@ def test_user_model_placeholder():
     assert True
 
 # Example of what a real test might look like (uncomment and adapt later):
-# from backend.src.models.user import User
+# from src.models.user import User
 
 # def test_valid_user_creation():
 #     user = User(email="test@example.com", password="securepassword")

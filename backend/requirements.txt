@@ -4,3 +4,4 @@ sqlmodel==0.0.14
 psycopg[binary]
 python-dotenv==1.0.0
 passlib[bcrypt]==1.7.4
+python-jose[cryptography]

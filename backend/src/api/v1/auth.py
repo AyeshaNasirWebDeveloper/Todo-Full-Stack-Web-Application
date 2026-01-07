@@ -1,11 +1,11 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlmodel import Session
-from backend.src.database import engine
-from backend.src.models.user import User, UserCreate, UserPublic
+from src.database import engine
+from src.models.user import User, UserCreate, UserPublic
 from typing import Optional
 from datetime import datetime, timedelta
 from jose import jwt
-from backend.src.middleware.auth import BETTER_AUTH_SECRET, ALGORITHM
+from src.middleware.auth import BETTER_AUTH_SECRET, ALGORITHM
 
 router = APIRouter()
 

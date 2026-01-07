@@ -4,10 +4,10 @@ from typing import List
 from fastapi import APIRouter, Depends, HTTPException
 from sqlmodel import Session, select
 
-from backend.src.database import get_session
-from backend.src.models.task import Task, TaskCreate, TaskPublic, TaskUpdate
-from backend.src.models.user import User
-from backend.src.middleware.auth import get_current_active_user
+from src.database import get_session
+from src.models.task import Task, TaskCreate, TaskPublic, TaskUpdate
+from src.models.user import User
+from src.middleware.auth import get_current_active_user
 
 tasks_router = APIRouter(prefix="/tasks", tags=["tasks"])
 
