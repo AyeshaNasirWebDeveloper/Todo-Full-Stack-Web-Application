@@ -26,7 +26,7 @@ def verify_token(
     token = credentials.credentials
     try:
         payload = jwt.decode(token, BETTER_AUTH_SECRET, algorithms=[ALGORITHM])
-        user_id: str | None = payload.get("sub")
+        user_id: str | None = int(payload.get("sub"))
         if user_id is None:
             raise HTTPException(
                 status_code=status.HTTP_401_UNAUTHORIZED,
