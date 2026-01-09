@@ -5,8 +5,8 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Todo App Phase II',
-  description: 'A full-stack Todo Web Application (Phase II)',
+  title: 'Sky Booster - Flight Booking App',
+  description: 'Book flights easily and quickly with Sky Booster. Find the best deals and manage your bookings all in one place.',
 };
 
 export default function RootLayout({

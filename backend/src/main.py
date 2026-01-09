@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from src.database import create_db_and_tables
 from dotenv import load_dotenv
 import os
+from fastapi.middleware.cors import CORSMiddleware
 
 # Load environment variables from .env file
 load_dotenv()
@@ -13,8 +14,13 @@ app = FastAPI()
 app.include_router(auth_router)
 app.include_router(tasks_router)
 
-# In a real application, you would connect to your database here.
-# For now, we'll just define a placeholder for database connection logic.
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],   # or ["http://localhost:3000"]
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.on_event("startup")
 def on_startup():
