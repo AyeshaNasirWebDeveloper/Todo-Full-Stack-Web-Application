@@ -81,79 +81,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ADVANCED FLIGHT SEARCH
-      <section id="search" className="relative -mt-20 z-30 mb-20 px-6">
-        <div className="max-w-5xl mx-auto bg-white shadow-xl rounded-2xl p-8 border border-gray-100 animate-slideUp">
-
-          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-            Search Flights
-          </h3>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-
-            <div>
-              <label className="block text-gray-700 font-semibold mb-2">
-                From
-              </label>
-              <input
-                type="text"
-                placeholder="Karachi (KHI)"
-                className="p-3 border rounded-lg w-full focus:outline-indigo-500"
-              />
-            </div>
-
-            <div>
-              <label className="block text-gray-700 font-semibold mb-2">
-                To
-              </label>
-              <input
-                type="text"
-                placeholder="Dubai (DXB)"
-                className="p-3 border rounded-lg w-full focus:outline-indigo-500"
-              />
-            </div>
-
-            <div>
-              <label className="block text-gray-700 font-semibold mb-2">
-                Depart Date
-              </label>
-              <input
-                type="date"
-                className="p-3 border rounded-lg w-full focus:outline-indigo-500"
-              />
-            </div>
-
-            <div>
-              <label className="block text-gray-700 font-semibold mb-2">
-                Return Date
-              </label>
-              <input
-                type="date"
-                className="p-3 border rounded-lg w-full focus:outline-indigo-500"
-              />
-            </div>
-
-            <div className="md:col-span-2">
-              <label className="block text-gray-700 font-semibold mb-2">
-                Passengers
-              </label>
-              <select className="p-3 border rounded-lg w-full focus:outline-indigo-500">
-                <option>1 Adult, Economy</option>
-                <option>2 Adults, Economy</option>
-                <option>1 Adult, Business Class</option>
-                <option>1 Adult, First Class</option>
-              </select>
-            </div>
-
-            <div className="lg:col-span-4 flex justify-center mt-4">
-              <button className="w-full lg:w-auto px-10 py-4 bg-indigo-600 text-white rounded-lg shadow-lg hover:bg-indigo-700 transition font-semibold">
-                Search Flights
-              </button>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       {/* ADVANCED FLIGHT SEARCH */}
       <section id="search" className="relative -mt-20 z-30 mb-20 px-6">
         <div className="max-w-5xl mx-auto bg-white shadow-xl rounded-2xl p-8 border border-gray-100 animate-slideUp">
@@ -401,7 +328,7 @@ export default function HomePage() {
         </div>
 
         <p className="text-center text-gray-200 mt-10">
-          © 2026 SkyBooker — All Rights Reserved.
+          Ayesha Nasir ❤️ © 2026 SkyBooker — All Rights Reserved.
         </p>
       </footer>
 
