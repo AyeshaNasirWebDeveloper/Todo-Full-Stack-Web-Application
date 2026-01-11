@@ -1,5 +1,5 @@
-fastapi==0.95.2
-pydantic<2
+fastapi==0.109.2
+pydantic==2.6.0
 uvicorn==0.23.2
 sqlmodel==0.0.14
 psycopg[binary]
