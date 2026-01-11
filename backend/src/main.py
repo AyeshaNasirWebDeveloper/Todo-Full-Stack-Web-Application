@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 import os
 from fastapi.middleware.cors import CORSMiddleware
 
+
 # Load environment variables from .env file
 load_dotenv()
 
@@ -16,7 +17,7 @@ app.include_router(tasks_router)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],   # or ["http://localhost:3000"]
+    allow_origins=["FRONTEND_URL"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
