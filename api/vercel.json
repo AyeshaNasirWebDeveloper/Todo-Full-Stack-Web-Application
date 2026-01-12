@@ -1,8 +1,7 @@
 {
   "functions": {
-    "api/*.py": {
-      "runtime": "python3.11",
-      "excludeFiles": "_vendor/**"
+    "api/**/*.py": {
+      "runtime": "python3.11"
     }
   }
 }
