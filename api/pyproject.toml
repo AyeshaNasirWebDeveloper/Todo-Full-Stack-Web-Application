@@ -7,9 +7,9 @@ requires-python = ">=3.10"
 
 pythonpath = ["."]
 dependencies = [
-    fastapi==0.101.1
-    uvicorn==0.23.2
-    pydantic==1.10.12
+    fastapi==0.101.1,
+    uvicorn==0.23.2,
+    pydantic==1.10.12,
     "sqlmodel==0.0.8",
     "psycopg2-binary>=2.9.11",
     "passlib[bcrypt]>=1.7.4",
