@@ -1,9 +1,9 @@
 {
-  "functions": {
-    "api/main.py": {
-      "runtime": "python3.11",
-      "memory": 1024,
-      "maxDuration": 30
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@vercel/python",
+      "config": { "runtime": "python3.11" }
     }
-  }
+  ]
 }
