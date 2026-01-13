@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/main.py": {
-      "runtime": "python@3.11"
+      "runtime": "python@3.11.0"
     }
   },
   "routes": [
